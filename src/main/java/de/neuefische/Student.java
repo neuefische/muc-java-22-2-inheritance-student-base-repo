@@ -1,6 +1,6 @@
 package de.neuefische;
 
-public class Student {
+public abstract class Student {
 
     private String name;
 
@@ -8,9 +8,7 @@ public class Student {
         this.name = name;
     }
 
-    public String sayHello() {
-        return "Hello! My name is " + this.name;
-    }
+    public abstract String sayHello();
 
     public String getName() {
         return name;
